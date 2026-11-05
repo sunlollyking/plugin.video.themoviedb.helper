@@ -3522,3 +3522,13 @@ msgstr ""
 msgctxt "#32758"
 msgid "Sign out of your TMDb account and remove the saved authentication token."
 msgstr ""
+
+#: /resources/settings.xml
+msgctxt "#32759"
+msgid "Sync confirmations"
+msgstr ""
+
+#: /resources/settings.xml
+msgctxt "#32760"
+msgid "Show a message when adding to a watchlist or collection, or marking an item watched, succeeds. Failures are always shown."
+msgstr ""

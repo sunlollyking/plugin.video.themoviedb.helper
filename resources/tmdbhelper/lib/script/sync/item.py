@@ -1,5 +1,5 @@
 from jurialmunkey.ftools import cached_property
-from tmdbhelper.lib.addon.plugin import get_localized
+from tmdbhelper.lib.addon.plugin import get_localized, get_setting
 from xbmcgui import Dialog
 
 
@@ -14,7 +14,6 @@ class ItemSync:
     localized_name = None
     convert_episodes = False
     convert_seasons = False
-    confirm_success = True
     is_available = True
 
     def __init__(self, tmdb_type, tmdb_id, season=None, episode=None):
@@ -244,6 +243,17 @@ class ItemSync:
 
     def get_status_code_message(self):
         return f'HTTP {self.status_code}'
+
+    """
+    confirm_success
+    """
+
+    @cached_property
+    def confirm_success(self):
+        return self.get_confirm_success()
+
+    def get_confirm_success(self):
+        return get_setting('sync_confirmations')
 
     """
     dialog_message

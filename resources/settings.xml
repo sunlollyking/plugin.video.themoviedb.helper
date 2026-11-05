@@ -115,6 +115,11 @@
                     <default>True</default>
                     <control type="toggle"/>
                 </setting>
+                <setting id="sync_confirmations" type="boolean" label="32759" help="32760">
+                    <level>0</level>
+                    <default>True</default>
+                    <control type="toggle"/>
+                </setting>
                 <setting id="connection_notifications" type="boolean" label="32471" help="32612">
                     <level>0</level>
                     <default>True</default>
